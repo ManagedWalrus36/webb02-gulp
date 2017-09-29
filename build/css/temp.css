@@ -1,2 +1,21 @@
-body {
-  background-color: #E41BE4; }
+.flagga {
+  position: relative;
+  background-color: #006AA7;
+  width: 800px;
+  height: 500px; }
+
+.flagga::before {
+  position: absolute;
+  content: " ";
+  height: 100%;
+  width: 12.5%;
+  background-color: #FECC00;
+  left: 31.25%; }
+
+.flagga::after {
+  position: absolute;
+  content: " ";
+  height: 20%;
+  width: 100%;
+  background-color: #FECC00;
+  top: 40%; }

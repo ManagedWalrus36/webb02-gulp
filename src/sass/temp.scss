@@ -1,5 +1,30 @@
-$a: #E41BE4;
+$blue: #006AA7;
+$height: $width*.625;
+$hori-line: 100%*.2;
+$vert-line: 100%*.125;
+$width: 800px;
+$yellow: #FECC00;
 
-body {
-    background-color: $a;
+.flagga {
+    background-color: $blue;
+    height: $height;
+    position: relative; 
+    width: $width;
+}
+
+.flagga::before{
+    background-color: $yellow;
+    content: " ";
+    height: 100%;
+    left: 31.25%;
+    position: absolute;
+    width: $vert-line;
+}
+.flagga::after{
+    content: " ";
+    background-color: $yellow;
+    height: $hori-line;
+    position: absolute;
+    top: (100% - $hori-line) / 2;
+    width: 100%;
 }

@@ -1,0 +1,67 @@
+$bg: #5E5B52;
+$camerawhite: #E6E8E5;
+$camerared: #BB3430;
+$lensgrey1: #393939;
+$lensgrey2: #555555;
+$lensgrey3: #4D4D4D;
+$lensgrey4: #6E6E6E;
+$lensgrey5: #606060;
+
+body{
+    background-color: $bg;
+    padding: 100px;
+}
+
+.camera{
+    background: linear-gradient(0deg, $camerawhite 30%, $camerared 30%, $camerared 70%, $camerawhite 70%);
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+    position: absolute
+}
+
+.lens{
+    background: $lensgrey1;
+    width: 30%;
+    height: 50%;
+    border-radius: 50%;
+    position: relative;
+    top: 20%;
+    left: 32%;
+    border: 17px solid $camerawhite;
+}
+
+.lens-center{
+    background-color: $lensgrey2;
+    width: 40%;
+    height: 40%;
+    position: relative;
+    border-radius: 50%;
+    z-index: 2;
+    top: 30%;
+    left: 30%;
+
+}
+
+.lens-center::before{
+    content: " ";
+    background: linear-gradient(45deg, $lensgrey2, $lensgrey3 50%, $lensgrey3);
+    width: 50%;
+    height: 50%;
+    position: relative;
+    border-radius: 50%;
+    top: 25%;
+    left: 25%;
+}
+
+.button{
+    position: relative;
+    width: 10%;
+    height: 8%;
+    background-color: #49101C;
+    top: -68%;
+    left: 4%;
+    z-index: -1;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
